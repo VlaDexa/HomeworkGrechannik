@@ -17,16 +17,18 @@
             <form class="form">
             <div class="former">
                 <label for="name">Имя</label><br>
-                <input id="name" required type="text" name="name" maxlength="20" required pattern="^[A-ZА-Я]\S*"><br>
-                <div id="error" class="error"></div>
+                <input id="name" type="text" name="name" maxlength="20" pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$" required><br>
             </div>
             <div class="former">
-                    <label for="secondname">Фамилия</label><br>
-                    <input id="secondname" required type="text" name="secondname" maxlength="20"><br>
-                    <div id="2error" class="error"></div>
-                </div>
+                <label for="secondname">Фамилия</label><br>
+                <input id="secondname" type="text" name="secondname" maxlength="20" pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$"><br>
+            </div>
             <div class="former">
-                <input type="submit">
+                <label for="fathername">Отчество</label><br>
+                <input id="fathername" required type="text" name="fathername" maxlength="20" required pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$"><br>
+            </div>
+            <div class="former">
+                    <input href="pepe.html" type="submit">
             </div>
         </form>
         </div>
