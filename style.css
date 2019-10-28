@@ -1,10 +1,38 @@
 .container{
     display: grid;
     grid-template-rows: 20vh 80vh;
+    grid-template-columns: 99vw 1vw;
 }
 .sub-container-header{
     padding-left: 20vw;
+
 }
 .sub-container{
+    grid-row: 2;
+    grid-template: 1;
     padding-left: 3vw;
+}
+.former{
+    padding-top: 3vh;
+}
+
+@media only screen and (max-aspect-ratio:10/16){
+.sub-container{
+    justify-self: center;
+    padding-left: 0px;
+}
+.sub-container-header{
+    justify-self: center;
+    padding-left: 0px;
+}
+input{
+    width: 90vw;
+    height: 5vh;
+}
+.former .former-first{
+    font-size: 180%;
+}
+.former{
+    padding-top: 1.5vh;
+}
 }

@@ -14,21 +14,43 @@
                 <h2>Регистрация</h2>
         </div>
         <div class="sub-container">
-            <form class="form">
-            <div class="former">
+            <form id="form">
+            <div class="former-first">
                 <label for="name">Имя</label><br>
                 <input id="name" type="text" name="name" maxlength="20" pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$" required><br>
             </div>
             <div class="former">
                 <label for="secondname">Фамилия</label><br>
-                <input id="secondname" type="text" name="secondname" maxlength="20" pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$"><br>
+                <input id="secondname" type="text" name="secondname" maxlength="20" pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$" required><br>
             </div>
             <div class="former">
                 <label for="fathername">Отчество</label><br>
-                <input id="fathername" required type="text" name="fathername" maxlength="20" required pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$"><br>
+                <input id="fathername" type="text" name="fathername" maxlength="20" pattern="^([\p{Lu}\p{Lt}]\p{Ll}+)+$" required><br>
             </div>
             <div class="former">
-                    <input href="pepe.html" type="submit">
+                <label for="email">email</label><br>
+                <input id="email" type="email" name="email" maxlength="300" pattern="^.+@.+\..+$"><br>
+            </div>
+            <div class="former">
+                <label for="password">Пароль</label><br>
+                <input id="password" type="password" name="password" minlength="10" maxlength="300" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]){3,}$" required>
+            </div>
+            <div class="former">
+                    <label for="date">День рождения</label><br>
+                    <input id="date" min="1900-01-01" max="2015-01-01" type="date" name="date"><br>
+            </div>
+            <div class="former">
+                <label for="gender">Пол</label><br>
+                <select name="gender" id="gender">
+                        <option disabled>Выберите пол</option>
+                        <option value="t1" selected>Мужчина</option>
+                        <option value="t2">Женщина</option>
+                        <option value="t3">Боевой вертолёт</option>
+                        <option value="t4">Другое</option>
+                       </select><br>
+            </div>
+            <div class="former">
+                    <input type="submit" value="Зарегестрироваться">
             </div>
         </form>
         </div>
