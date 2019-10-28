@@ -1,0 +1,10 @@
+.container{
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+}
+.sub-container-header{
+    padding-left: 20vw;
+}
+.sub-container{
+    padding-left: 3vw;
+}
