@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,19 @@
                 <h2>Регистрация</h2>
         </div>
         <div class="sub-container">
-            <label for="name">Имя</label><br>
-            <input id="name" required type="text" name="name" maxlength="30"><br>
-            <div id="error" class="error"></div>
-            <input type="submit" onclick="erorrer()">
+            <div class="former">
+                <label for="name">Имя</label><br>
+                <input id="name" required type="text" name="name" maxlength="20" oninput="validateComments(this)"><br>
+                <div id="error" class="error"></div>
+            </div>
+            <div class="former">
+                    <label for="secondname">Фамилия</label><br>
+                    <input id="secondname" required type="text" name="secondname" maxlength="20"><br>
+                    <div id="2error" class="error"></div>
+                </div>
+            <div class="former">
+                <input type="submit">
+            </div>
         </div>
     </div>
 </body>
