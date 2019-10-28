@@ -14,9 +14,10 @@
                 <h2>Регистрация</h2>
         </div>
         <div class="sub-container">
+            <form class="form">
             <div class="former">
                 <label for="name">Имя</label><br>
-                <input id="name" required type="text" name="name" maxlength="20" oninput="validateComments(this)"><br>
+                <input id="name" required type="text" name="name" maxlength="20" required pattern="^[A-ZА-Я]\S*"><br>
                 <div id="error" class="error"></div>
             </div>
             <div class="former">
@@ -27,6 +28,7 @@
             <div class="former">
                 <input type="submit">
             </div>
+        </form>
         </div>
     </div>
 </body>
