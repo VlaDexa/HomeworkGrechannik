@@ -47,7 +47,6 @@ document.getElementById("form").onsubmit = function (evt) {
         object[evt.target[i].name] = evt.target[i].value;
     }
     localStorage.setItem("data", JSON.stringify(object));
-    
 }
 window.onload = function(){
     if(localStorage.getItem("data")){
@@ -57,7 +56,5 @@ window.onload = function(){
             if(document.getElementById(element))
             document.getElementById(element).value = object[element];
         });
-        
-        
     }
 }
