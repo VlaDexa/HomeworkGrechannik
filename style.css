@@ -1,11 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: grid;
     grid-template-rows: 20vh 80vh;
-    grid-template-columns: 99vw 1vw;
 }
 .sub-container-header{
     padding-left: 20vw;
-
+    padding-top:7.5vh;
 }
 .sub-container{
     grid-row: 2;
